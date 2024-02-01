@@ -49,6 +49,4 @@ function loadURLS(URL) {
    for (let i = 0; i < x.length; i++) {
       x[i].setAttribute('onClick', `window.open("${URL[i]}");`);
    }
-}
-
-//termux works
+};
