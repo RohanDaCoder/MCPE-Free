@@ -15,8 +15,8 @@
    src: url('assets/fonts/Minecraft-Five.ttf') format('truetype');
 }
 @import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
-   @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
-   body {
+@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');  
+body {
    text-align: center;
    background-color: #000;
    padding: 0px;
@@ -35,7 +35,7 @@ button, .on {
    background: #222;
    padding: 11px;
    color: #fff;
-   border: .9px solid silver;
+   border: 1px solid silver;
    border-radius: 5px;
    font-family: "Minecraft Ten", sans-serif;
    font-size: 20px;
