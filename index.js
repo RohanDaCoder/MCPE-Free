@@ -9,6 +9,7 @@ function addURLS() {
       'https://mcpedl.org/uploads_files/19-09-2023/minecraft-1-20-30.apk',
       'https://mcpedl.org/uploads_files/16-08-2023/minecraft-1-20-15.apk',
       'https://mcpedl.org/uploads_files/18-07-2023/minecraft-1-20-12.apk',
+      'https://mcpedl.org/uploads_files/11-07-2023/minecraft-1-20-10.apk',
       'https://mcpedl.org/uploads_files/21-06-2023/minecraft-1-20-1.apk',
       'https://mcpedl.org/uploads_files/07-06-2023/minecraft-1-20-0.apk',
       'https://tinyurl.com/mcpe11981',
@@ -48,4 +49,4 @@ function loadURLS(URL) {
    for (let i = 0; i < x.length; i++) {
       x[i].setAttribute('onClick', `window.open("${URL[i]}");`);
    }
-};
+}
