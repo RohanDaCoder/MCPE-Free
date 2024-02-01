@@ -43,7 +43,7 @@ function addURLS() {
       'https://www.mediafire.com/file/tzgdon033175lzn/Minecraft_PE_1.19.2-64bit.apk/file',
       'https://www.mediafire.com/file/xty209dq6btrozl/Minecraft.ver.1.19.0.05.build.951900005.apk/file?dkey=25prbi9pn4p116'];
    loadURLS(URLS);
-}
+};
 function loadURLS(URL) {
    let x = document.getElementsByTagName('button');
    for (let i = 0; i < x.length; i++) {
