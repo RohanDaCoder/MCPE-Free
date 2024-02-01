@@ -1,14 +1,14 @@
 # Minecraft PE Downloader Website
 
 ## Overview
-This repository contains the source code for a Minecraft PE downloader website created by Rohan. The website allows users to download various versions of Minecraft Pocket Edition APKs conveniently.
+This repository contains the source code for a Minecraft PE downloader website created by Rohan. The website allows users to download various versions of Minecraft Pocket Edition APKs for mobile devices conveniently.
 
 ## Features
 - Easy navigation through different Minecraft PE versions.
 - Direct download links for each version.
 
 ## How to Use
-1. Simply open the website in your preferred browser.
+1. Simply open the [website](https://rohandacoder.github.io/MCPE-Free/) in your browser.
 2. Browse and select the Minecraft PE version you want to download.
 3. Click on the respective button to initiate the download.
 
