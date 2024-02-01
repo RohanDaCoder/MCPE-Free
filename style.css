@@ -1,18 +1,18 @@
 @font-face {
    font-family: 'Minecraft Ten';
-   src: url('assets/Minecraft-Ten.ttf') format('truetype');
+   src: url('assets/fonts/Minecraft-Ten.ttf') format('truetype');
 }
 @font-face {
    font-family: 'Mojangles';
-   src: url('assets/Mojangles.ttf') format('truetype');
+   src: url('assets/fonts/Mojangles.ttf') format('truetype');
 }
 @font-face {
    font-family: 'Minecraft Seven';
-   src: url('assets/Minecraft-Seven.ttf') format('truetype');
+   src: url('assets/fonts/Minecraft-Seven.ttf') format('truetype');
 }
 @font-face {
    font-family: 'Minecraft Five';
-   src: url('assets/Minecraft-Five-Bold.ttf') format('truetype');
+   src: url('assets/fonts/Minecraft-Five.ttf') format('truetype');
 }
 @import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
    @import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');
