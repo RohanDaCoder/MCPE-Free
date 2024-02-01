@@ -50,3 +50,5 @@ function loadURLS(URL) {
       x[i].setAttribute('onClick', `window.open("${URL[i]}");`);
    }
 }
+
+//termux works
