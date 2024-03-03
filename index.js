@@ -1,5 +1,6 @@
 function addURLS() {
    let URLS = [
+     "https://mcpedlcom.org/wp-content/uploads/2024/02/minecraft-1-20-62.apk",
      "https://mcpedl.org/uploads_files/06-02-2024/minecraft-1-20-60.apk",
      "https://mcpedl.org/uploads_files/14-12-2023/minecraft-1-20-51.apk",
      "https://mcpedl.org/uploads_files/05-12-2023/minecraft-1-20-50.apk",
