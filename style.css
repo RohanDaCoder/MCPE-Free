@@ -1,83 +1,100 @@
 @font-face {
-   font-family: 'Minecraft Ten';
-   src: url('assets/fonts/Minecraft-Ten.ttf') format('truetype');
+  font-family: "Minecraft Ten";
+  src: url("assets/fonts/Minecraft-Ten.ttf") format("truetype");
 }
+
 @font-face {
-   font-family: 'Mojangles';
-   src: url('assets/fonts/Mojangles.ttf') format('truetype');
+  font-family: "Mojangles";
+  src: url("assets/fonts/Mojangles.ttf") format("truetype");
 }
+
 @font-face {
-   font-family: 'Minecraft Seven';
-   src: url('assets/fonts/Minecraft-Seven.ttf') format('truetype');
+  font-family: "Minecraft Seven";
+  src: url("assets/fonts/Minecraft-Seven.ttf") format("truetype");
 }
+
 @font-face {
-   font-family: 'Minecraft Five';
-   src: url('assets/fonts/Minecraft-Five.ttf') format('truetype');
+  font-family: "Minecraft Five";
+  src: url("assets/fonts/Minecraft-Five.ttf") format("truetype");
 }
-@import url('https://fonts.googleapis.com/css2?family=Oxanium&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Kalam&display=swap');  
+
+@import url("https://fonts.googleapis.com/css2?family=Oxanium&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Kalam&display=swap");
+
 body {
-   text-align: center;
-   background-color: #000;
-   padding: 0px;
-   margin: 8px;
-   border-style: double;
-   border-radius: 20px;
-   border-color: #666;
-   border-width: 2px;
-   -webkit-user-select: none;
-   -moz-user-select: none;
-   -ms-user-select: none;
-   user-select: none;
+  text-align: center;
+  background-color: #000;
+  padding: 0px;
+  margin: 8px;
+  border-style: double;
+  border-radius: 20px;
+  border-color: #666;
+  border-width: 2px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  font-family: "Kalam", sans-serif;
+  color: #fff;
 }
-button, .on {
-   width: 45%;
-   background: #222;
-   padding: 11px;
-   color: #fff;
-   border: 1px solid silver;
-   border-radius: 5px;
-   font-family: "Minecraft Ten", sans-serif;
-   font-size: 20px;
-   margin-top: 20px;
-   text-align: center;
-   margin: 1%;
-   letter-spacing: 1.2px;
+
+button,
+.on {
+  width: 45%;
+  background: #222;
+  padding: 11px;
+  color: #fff;
+  border: 1px solid silver;
+  border-radius: 5px;
+  font-family: "Minecraft Ten", sans-serif;
+  font-size: 20px;
+  margin-top: 20px;
+  text-align: center;
+  margin: 1%;
+  letter-spacing: 1.2px;
+  cursor: pointer;
 }
-button:hover, .on:hover {
-   transform: scale(.95);
-   border: .9px solid cyan;
+
+button:hover,
+.on:hover {
+  transform: scale(0.95);
+  border-color: cyan;
 }
+
 .title {
-   font-size: 40px;
-   font-family: "Mojangles", sans-serif;
-   letter-spacing: 2px;
-   color: #fff;
-   text-align: center;
-   font-weight: 1000;
-   margin: 5%;
+  font-size: 40px;
+  font-family: "Mojangles", sans-serif;
+  letter-spacing: 2px;
+  font-weight: 1000;
+  margin: 5%;
+  color: #fff;
 }
+
 .title:active {
-   transform: scale(0.98);
+  transform: scale(0.98);
 }
+
 hr {
-   width: 80%;
-   margin-top: 20px;
-   margin-bottom: 20px;
+  width: 80%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-color: #fff;
 }
+
 footer {
-   border: 1px solid white;
-   background: #333;
-   width: auto;
-   border-radius: 10px;
-   margin-left: 10%;
-   margin-right: 10%;
-   margin-top: 3%;
-   margin-bottom: 3%;
-   font-size: 20px;
-   font-family: "Minecraft Five", sans-serif;
+  border: 1px solid white;
+  background: #333;
+  width: auto;
+  border-radius: 10px;
+  margin-left: 10%;
+  margin-right: 10%;
+  margin-top: 3%;
+  margin-bottom: 3%;
+  font-size: 20px;
+  font-family: "Minecraft Five", sans-serif;
 }
+
 footer p {
-   color: #fff;
-   margin: 5%;
+  color: #fff;
+  margin: 5%;
 }
