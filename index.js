@@ -21,6 +21,7 @@ document.addEventListener("DOMContentLoaded", function() {
     "1.20.10": "https://mcpedl.org/uploads_files/11-07-2023/minecraft-1-20-10.apk",
     "1.20.1": "https://mcpedl.org/uploads_files/21-06-2023/minecraft-1-20-1.apk",
     "1.20.0": "https://mcpedl.org/uploads_files/07-06-2023/minecraft-1-20-0.apk",
+    "1.19.81": "https://tinyurl.com/mcpe11981",
     "1.19.80": "https://mcpedl.org/uploads_files/26-04-2023/minecraft-1-19-80.apk",
     "1.19.73": "https://mcpedl.org/uploads_files/29-03-2023/minecraft-1-19-73-02.apk",
     "1.19.71": "https://mcpedl.org/uploads_files/17-03-2023/minecraft-1-19-71.apk",
@@ -41,7 +42,6 @@ document.addEventListener("DOMContentLoaded", function() {
     "1.19.10": "https://mcpedl.org/uploads_files/16-07-2022/minecraft-1-19-10.apk",
     "1.19.2": "https://mcpedl.org/uploads_files/01-12-2022/minecraft-1-19-2.apk",
     "1.19.0": "https://mcpedl.org/uploads_files/01-12-2022/minecraft-1-19-0.apk",
-    "1.19.81": "https://tinyurl.com/mcpe11981",
   };
 
 
