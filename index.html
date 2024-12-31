@@ -1,33 +1,215 @@
-<html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Minecraft PE</title>
-    <link
-      href="https://fonts.googleapis.com/css?family=Rancho&amp;effect=3d"
-      rel="stylesheet"
-    />
-    <link href="style.css" rel="stylesheet" />
-    <script src="index.js"></script>
-  </head>
+<!DOCTYPE html>
+<html lang="en" class="dark">
 
-  <body>
-    <h3 class="font-effect-3d title">Minecraft - 1.21</h3>
-    <button onclick="window.open('https://github.com/RohanDaCoder/MCPE-Free/raw/main/MCenters%205.0.exe');" class="version-button">MC Center 5.0</button>
-    <hr />
-    <div id="version-1-21" class="version-container"></div>
-    <h3 class="font-effect-3d title">Minecraft - 1.20</h3>
-    <hr />
-    <div id="version-1-20" class="version-container"></div>
-    <hr />
-    <h3 class="font-effect-3d title">Minecraft 1.19</h3>
-    <hr />
-    <div id="version-1-19" class="version-container"></div>
-    <hr />
-    <footer>
-      <p>Website by: Rohan</p>
-      <p>APK by: mcpedl.org</p>
-      <p>Discord: rohan_ohio</p>
-    </footer>
-  </body>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Minecraft PE Downloads</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        background: '#09090b',
+                        card: '#1c1c1c',
+                        text: '#ffffff',
+                        muted: '#a1a1aa',
+                        button: {
+                            DEFAULT: '#27272a',
+                            hover: '#3f3f46',
+                            active: '#52525b',
+                            disabled: '#3f3f46',
+                            'disabled-text': '#71717a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @keyframes float {
+
+            0%,
+            100% {
+                transform: translateY(0);
+            }
+
+            50% {
+                transform: translateY(-10px);
+            }
+        }
+
+        @keyframes pulse {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.02);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        .float {
+            animation: float 3s ease-in-out infinite;
+        }
+
+        .pulse {
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        .version-card {
+            transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+            transform: translateZ(0);
+            will-change: transform;
+        }
+
+        .version-card:hover {
+            transform: translateY(-4px);
+        }
+
+        .custom-button {
+            transition: all 0.2s cubic-bezier(0.4, 0, 0.2, 1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .custom-button::after {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 50%;
+            background: linear-gradient(to bottom, rgba(255, 255, 255, 0.1), transparent);
+            border-radius: inherit;
+        }
+
+        .custom-button:hover {
+            transform: translateY(-1px);
+        }
+
+        .custom-button:active {
+            transform: translateY(1px);
+        }
+    </style>
+</head>
+
+<body class="min-h-screen bg-background text-text font-sans p-4 selection:bg-button-hover selection:text-text">
+    <div class="max-w-6xl mx-auto">
+        <header class="text-center mb-16">
+            <h1 class="text-5xl md:text-7xl font-bold mb-6 float">
+                Minecraft PE
+            </h1>
+            <p class="text-lg md:text-xl text-muted flex items-center justify-center gap-2">
+                Download your favorite Minecraft Pocket Edition versions
+            </p>
+        </header>
+
+        <div class="text-center mb-16">
+            <button onclick="window.open('https://github.com/RohanDaCoder/MCPE-Free/raw/main/MCenters%205.0.exe');"
+                class="custom-button bg-button px-8 py-4 rounded-lg text-xl md:text-2xl font-semibold tracking-wide group pulse">
+                <i data-lucide="download-cloud"
+                    class="inline-block w-6 h-6 mr-3 transition-transform group-hover:-translate-y-1"></i>
+                Download MC Center 5.0
+            </button>
+        </div>
+
+        <div id="versions-container" class="space-y-16"></div>
+
+        <footer class="mt-16 bg-card rounded-lg p-8 backdrop-blur-sm">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-center">
+                <div>
+                    <i data-lucide="code" class="w-6 h-6 mx-auto mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">Creator</h3>
+                    <p class="text-muted">Website by: Rohan</p>
+                </div>
+                <div>
+                    <i data-lucide="package" class="w-6 h-6 mx-auto mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">Source</h3>
+                    <a href="https://github.com/RohanDaCoder/MCPE-Free" class="text-muted">Github Link</a>
+                </div>
+                <div>
+                    <i data-lucide="message-circle" class="w-6 h-6 mx-auto mb-3"></i>
+                    <h3 class="text-xl font-bold mb-2">Contact</h3>
+                    <p class="text-muted">Discord: rohan_ohio</p>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        const versionsData = {
+            versions: [
+                {
+                    name: "1.21",
+                    releases: [
+                        { version: "1.21.0", url: "https://mcpedl.org/uploads_files/13-06-2024/minecraft-1-21-0.apk" }
+                    ]
+                },
+                {
+                    name: "1.20",
+                    releases: [
+                        { version: "1.20.81", url: "https://mcpedl.org/uploads_files/29-04-2024/minecraft-1-20-81.apk" },
+                        { version: "1.20.80", url: "https://mcpedl.org/uploads_files/23-04-2024/minecraft-1-20-80.apk" },
+                        { version: "1.20.73", url: "https://mcpedl.org/uploads_files/02-04-2024/minecraft-1-20-73.apk" },
+                        { version: "1.20.72", url: "https://mcpedl.org/uploads_files/19-03-2024/minecraft-1-20-72.apk" },
+                        { version: "1.20.71", url: "https://mcpedl.org/uploads_files/12-03-2024/minecraft-1-20-71.apk" },
+                    ]
+                },
+                {
+                    name: "1.19",
+                    releases: [
+                        { version: "1.19.81", url: "https://tinyurl.com/mcpe11981" },
+                        { version: "1.19.80", url: "https://mcpedl.org/uploads_files/26-04-2023/minecraft-1-19-80.apk" },
+                        { version: "1.19.73", url: "https://mcpedl.org/uploads_files/29-03-2023/minecraft-1-19-73-02.apk" },
+                        { version: "1.19.71", url: "https://mcpedl.org/uploads_files/17-03-2023/minecraft-1-19-71.apk" },
+                        { version: "1.19.70", url: "https://mcpedl.org/uploads_files/14-03-2023/minecraft-1-19-70.apk" }
+                    ]
+                }
+            ]
+        };
+
+        $(document).ready(function () {
+            lucide.createIcons();
+
+            const container = $("#versions-container");
+
+            versionsData.versions.forEach(majorVersion => {
+                const section = $("<section>").addClass("version-section");
+
+                section.append(`
+                    <h2 class="text-3xl md:text-4xl font-bold mb-8 pb-2 border-b border-button flex items-center gap-3">
+                        <i data-lucide="boxes" class="w-8 h-8"></i>
+                        Minecraft ${majorVersion.name}
+                    </h2>
+                    <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6">
+                        ${majorVersion.releases.map(release => `
+                            <div class="version-card bg-card rounded-lg p-6 shadow-lg">
+                                <div class="text-xl font-bold mb-4 text-center">${release.version}</div>
+                                <button 
+                                    onclick="window.location.href='${release.url}'"
+                                    class="custom-button bg-button w-full py-3 px-4 rounded-md text-sm font-medium flex items-center justify-center gap-2">
+                                    <i data-lucide="download" class="w-4 h-4"></i>
+                                    Download
+                                </button>
+                            </div>
+                        `).join('')}
+                    </div>
+                `);
+
+                container.append(section);
+            });
+
+            lucide.createIcons();
+        });
+    </script>
+</body>
+
 </html>
