@@ -3,7 +3,7 @@
 ## Links
 
 - [Mobile Minecraft (APK)](https://rohandacoder.github.io/MCPE-Free/)
-- [PC Minecraft (MC Center 5.0)](https://github.com/RohanDaCoder/MCPE-Free/raw/main/MCenters%205.0.exe)
+- [PC Minecraft (M Center 5, 8)](https://github.com/RohanDaCoder/MCPE-Free/raw/main/MCenters%205.0.exe)
 
 ## Overview
 
